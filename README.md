@@ -1,4 +1,4 @@
-# React
+# Unsplash Clone
 
 A simple photo feed using ReactJs to display images in a masonry format as pinterest feed.
 
