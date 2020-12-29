@@ -1,0 +1,96 @@
+/* Masonry Grid */
+
+.masonry-grid {
+  display: flex;
+  width: auto;
+  margin-top: 0px;
+}
+.masonry-grid_column {
+  background-clip: padding-box;
+}
+
+@media screen and (max-width: 500px) {
+  .masonry-grid_column {
+    padding-left: 45px;
+  }
+  .masonry-grid {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 0px;
+  }
+}
+/* Style your items */
+.masonry-grid_column > div {
+  margin: 20px auto;
+}
+
+body {
+  background: linear-gradient(
+    136deg,
+    #4484ce,
+    #1ad7c0,
+    #ff9b11,
+    #9b59b6,
+    #ff7f7f,
+    #ecf0f1
+  );
+
+  background-size: 1200% 1200%;
+  -webkit-animation: AnimationName 40s ease infinite;
+  -moz-animation: AnimationName 40s ease infinite;
+  -o-animation: AnimationName 40s ease infinite;
+  animation: AnimationName 40s ease infinite;
+  height: 100%;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 7%;
+  }
+  50% {
+    background-position: 100% 94%;
+  }
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 7%;
+  }
+  50% {
+    background-position: 100% 94%;
+  }
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 7%;
+  }
+  50% {
+    background-position: 100% 94%;
+  }
+  100% {
+    background-position: 0% 7%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 7%;
+  }
+  50% {
+    background-position: 100% 94%;
+  }
+  100% {
+    background-position: 0% 7%;
+  }
+}
+.bg-gradient {
+  background: linear-gradient(rgba(245, 245, 245), rgba(245, 245, 245, 0));
+}

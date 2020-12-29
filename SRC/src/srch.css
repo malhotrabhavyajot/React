@@ -1,0 +1,130 @@
+.label {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+}
+
+.title {
+  font-size: 4.4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.form {
+  display: grid;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Masonry Grid */
+
+.masonry-grid {
+  display: flex;
+  width: auto;
+  margin-top: 0px;
+}
+.masonry-grid_column {
+  background-clip: padding-box;
+}
+
+@media screen and (max-width: 500px) {
+  .masonry-grid_column {
+    padding-left: 45px;
+  }
+  .masonry-grid {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 0px;
+  }
+  * {
+    padding: 5px;
+  }
+}
+/* Style your items */
+.masonry-grid_column > div {
+  margin: 20px auto;
+}
+
+@media (min-width: 768px) {
+  .form {
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  .input {
+    margin-bottom: 0;
+  }
+  .masonry-grid_column {
+    padding-left: 55px;
+  }
+  * {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-list {
+    column-count: 1;
+  }
+  * {
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .masonry-grid_column {
+    padding-left: 55px;
+  }
+  * {
+    padding: 5px;
+  }
+}
+.card {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card--image {
+  flex: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.card-list {
+  column-count: 3;
+}

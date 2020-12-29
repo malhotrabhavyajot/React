@@ -1,0 +1,53 @@
+{
+  "name": "Masonary",
+  "description": "A personal projects.",
+  "homepage": "https://unsplash4yellow.netlify.app/",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Bhavyajot Malhotra",
+    "email": "malhotrabhavyajot@gmail.com",
+    "url": "https://unsplash4yellow.netlify.app/"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.3",
+    "dotenv": "^8.2.0",
+    "gh-pages": "^3.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-infinite-scroll-component": "^5.0.4",
+    "react-masonry-css": "^1.0.14",
+    "react-scripts": "3.4.1",
+    "react-typist": "^2.0.5",
+    "styled-components": "^5.1.0",
+    "unsplash-js": "^6.3.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "custom-deploy": "node pages.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
